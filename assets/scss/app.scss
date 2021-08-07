@@ -1,0 +1,181 @@
+#index{
+    background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @apply w-full min-h-screen relative flex-col font-semibold px-4;
+  
+  @media only screen and (min-width: 380px) {
+    @apply px-8;
+   }
+
+  .page-form{
+    @apply  px-7 py-12 relative mb-12 w-full overflow-auto;
+    min-height: 28rem;
+    border-radius: 37.2px;
+    background: rgba(36, 36, 36, 0.9);
+    .payment-info{
+      @apply flex flex-col justify-between; 
+      @media only screen and (min-width: 574px) {
+        @apply flex flex-row;
+       }
+    }
+    .index-form{
+      @apply flex flex-col text-white items-center px-4;
+      
+      @media only screen and (min-width: 903px) {
+        @apply flex flex-row;
+        align-items: flex-start;
+      }
+      .text-body{
+        &:nth-child(1){
+          @media only screen and (min-width: 1082px) {
+            max-width: 47rem;
+          }
+         
+          @media only screen and (min-width: 1284px) {
+            max-width: 52rem;
+          }
+          @media only screen and (min-width: 1536px) {
+            max-width: 64rem;
+          }
+        }
+        @apply mb-16;
+        h1{
+          @apply text-3xl mb-4;
+        }
+      
+      }
+      .user-img{
+        @apply rounded-full border-4 mr-8 border-white flex items-center justify-center ;
+        width: 150.8px;
+        height: 150.8px;
+        @media only screen and (max-width: 648px) {
+          width: 100.8px;
+          height: 100.8px;
+        }
+        img{
+          @apply rounded-full max-w-full max-h-full;
+          width: 142.8px;
+          height: 142.8px;
+          @media only screen and (max-width: 648px) {
+            width: 92.8px;
+        height: 92.8px;
+          }
+         
+        }
+      }
+
+      .head{
+        .bar{
+          @apply bg-white block mt-2 w-full;
+           height: 2px;
+        }
+      }
+
+     .form{
+        @apply mt-6;
+      .index-input{
+        @apply mb-5 relative;
+        label{
+          @apply mb-4;
+        }
+
+        input,textarea{
+          @apply w-full border border-white mt-2 px-4;
+          -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+          border-radius: 7px;
+          min-height: 37px;
+          background: rgba(223, 223, 223, 0.4);
+          resize: none;
+       
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        select{
+          @apply w-full border border-white px-4 mt-2;
+          -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+          padding-top: 7px;
+          border-radius: 7px;
+          min-height: 37px;
+          background: rgba(223, 223, 223, 0.4);
+          option{
+            color: black;
+          }
+        }
+
+        span{
+          @apply absolute;
+          top: 38px;
+          left: 8px;
+        }
+      }
+     }
+    }
+    .float-img{
+      @apply absolute hidden;
+      right: 5rem;
+   top: 4rem;
+   @media only screen and (min-width: 1183px) {
+    @apply flex;
+  }
+    }
+
+    .submit-btn{
+      @apply flex justify-end px-12;
+      button{
+        @apply px-5 py-2 text-white font-semibold;
+        border-radius: 9.82px;
+  
+        background: linear-gradient(#f9aa20 0%, #dd158b 100%);
+      }
+    }
+   
+  }
+  .notAuth {
+    @apply m-auto;
+     
+    .head{
+        @apply  text-xl text-center; 
+        @media only screen and (min-width: 460px) {
+          @apply  text-3xl; 
+        }
+    }
+    .message{
+        @apply mt-4 flex flex-col justify-center items-center;
+        h1{
+            @apply text-lg text-center;
+            @media only screen and (min-width: 460px) {
+              @apply  text-2xl; 
+            }
+        }
+        a{
+            @apply px-6 py-1.5 mt-6 text-xl cursor-pointer;
+            border-radius: 9.82px;
+            background: linear-gradient(#f9aa20 0%, #dd158b 100%);
+        }
+    }
+    }
+  .section-container{
+    @apply justify-between mx-auto mt-11 flex;
+    
+    @media only screen and (min-width: 498px) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+   
+    max-width: 1618px;
+  }
+
+}

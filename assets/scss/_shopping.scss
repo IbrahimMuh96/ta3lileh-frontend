@@ -1,0 +1,280 @@
+#index{
+    .right-index{
+        @apply flex flex-col relative;
+        @media only screen and (max-width: 963px) {
+            @apply items-center justify-center;
+           }
+        .steps{
+          @apply relative flex-col hidden items-center mb-9;
+          @media only screen and (min-width: 333px) {
+            @apply flex;
+           }
+          div {
+          @apply relative;
+            span{
+              @apply absolute text-white text-xl;
+          }
+          
+          .first_step{
+              top: 32px;
+              left: 20px;
+          }
+           .second_step{
+            top: 32px;
+            right: 118px;
+          }
+           .third_step{
+            top: 32px;
+            right: 18px;
+          }
+          }
+        }
+          .bar{
+              @apply bg-white block mt-2 w-1/2;
+               height: 2px;
+            }
+        .card{
+          @apply text-white px-4 py-6 max-w-full; 
+          width: 368.91px;
+          border-radius: 9.41px;
+          background: rgba(36, 36, 36, 0.9);
+          .total{
+            @apply flex items-center justify-around mt-7;
+            p:nth-child(2){
+              @apply px-5 py-2;
+              border-radius: 9.82px;
+    background: linear-gradient(#f9aa20 0%, #dd158b 100%);
+            }
+          }
+          .pay{
+            @apply mt-5;
+            margin-left: 48px;
+          }
+          .confirm-btn{
+            @apply w-full;
+           a{
+              @apply rounded-full w-full flex items-center justify-center py-1 mt-10;
+            background: linear-gradient(to right,#f9aa20 0%, #dd158b 100%);
+          
+           }
+          }
+        }
+      }
+    
+  .shopping-page-form{
+    @apply  px-7 py-12 relative mb-12 w-full overflow-auto;
+    @media only screen and (min-width: 963px) {
+        width: 69rem
+       }
+       @media only screen and (max-width: 1385px) {
+        @apply pt-12 pb-20;
+       }
+    min-height: 28rem;
+    border-radius: 37.2px;
+    background: rgba(36, 36, 36, 0.9);
+    .payment-info{
+      @apply flex flex-col justify-between; 
+      @media only screen and (min-width: 945px) {
+        @apply flex flex-row;
+       }
+    }
+
+   
+    .index-form{
+      @apply flex flex-col text-white items-center px-4;
+      
+      @media only screen and (min-width: 903px) {
+        @apply flex flex-row;
+        align-items: flex-start;
+      }
+      .text-body{
+        &:nth-child(1){
+          @media only screen and (min-width: 1082px) {
+            max-width: 47rem;
+          }
+         
+          @media only screen and (min-width: 1284px) {
+            max-width: 52rem;
+          }
+          @media only screen and (min-width: 1536px) {
+            max-width: 64rem;
+          }
+        }
+        @apply mb-16;
+        h1{
+          @apply text-3xl mb-4;
+        }
+      
+      }
+       
+      .head{
+        .bar{
+          @apply bg-white block mt-2 w-full;
+           height: 2px;
+        }
+      }
+
+     .form{
+        @apply mt-6;
+      .index-input{
+        @apply mb-5 relative;
+        label{
+          @apply mb-4;
+        }
+
+        input,textarea{
+          @apply w-full border border-white mt-2 px-4;
+          -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+          border-radius: 7px;
+          min-height: 37px;
+          background: rgba(223, 223, 223, 0.4);
+          resize: none;
+       
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        select{
+          @apply w-full border border-white px-4 mt-2;
+          -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+          padding-top: 7px;
+          border-radius: 7px;
+          min-height: 37px;
+          background: rgba(223, 223, 223, 0.4);
+          option{
+            color: black;
+          }
+        }
+
+        span{
+          @apply absolute;
+          top: 38px;
+          left: 8px;
+        }
+      }
+     }
+    }
+    .float-img{
+      @apply absolute hidden;
+      right: 5rem;
+   top: 4rem;
+   @media only screen and (min-width: 1325px) {
+    @apply flex;
+  }
+    }
+
+    .radio{
+        .list {
+        flex: 0 0 20rem;
+    }
+    
+    .list__item {
+        position: relative;
+        &:hover > .label {
+         
+            &::before {
+                 margin-right: 2rem;
+            }
+        }
+    }
+    
+    .radio-btn {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        &:checked + .label {
+            color: linear-gradient(#f9aa20 0%, #dd158b 100%);
+            &::before {
+                 
+                border: 4px solid rgba(36, 36, 36, 0.9);
+                background: linear-gradient(#f9aa20 0%, #dd158b 100%);
+            }
+        }
+    }
+    
+     
+    
+    .label::before {
+        display: inline-block;
+        content: "";
+        height: 1.125rem;
+        width: 1.125rem;
+        margin-right: 0.625rem;
+        border: 1px solid white;
+        border-radius: 50%;
+        transition: all 0.25s linear;
+    }
+      }
+
+      .empty-cart{
+        @apply flex items-center text-white mt-6 text-lg;
+        
+        @media only screen and (min-width: 1087px) {
+          margin-left: 5rem;
+        }
+       
+        img{
+           margin-right: 2rem; 
+        }
+    }
+      
+    .submit-btn{
+      @apply flex justify-end px-12;
+      button{
+        @apply px-5 py-2 text-white font-semibold;
+        border-radius: 9.82px;
+  
+        background: linear-gradient(#f9aa20 0%, #dd158b 100%);
+      }
+    }
+   
+  }
+  .notAuth {
+    @apply m-auto;
+     
+    .head{
+        @apply  text-xl text-center; 
+        @media only screen and (min-width: 460px) {
+          @apply  text-3xl; 
+        }
+    }
+    .message{
+        @apply mt-4 flex flex-col justify-center items-center;
+        h1{
+            @apply text-lg text-center;
+            @media only screen and (min-width: 460px) {
+              @apply  text-2xl; 
+            }
+        }
+        a{
+            @apply px-6 py-1.5 mt-6 text-xl cursor-pointer;
+            border-radius: 9.82px;
+            background: linear-gradient(#f9aa20 0%, #dd158b 100%);
+        }
+    }
+    }
+  .shopping-container{
+    @apply justify-between mx-auto mt-11 flex flex-col;
+    @media only screen and (min-width: 963px) {
+       @apply flex-row;
+      }
+    @media only screen and (min-width: 498px) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+   
+    max-width: 1618px;
+  }
+
+}
