@@ -19,9 +19,10 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "autoprefixer": "^9.8.6",
     "eslint-config-prettier": "^8.3.0",
     "postcss": "^8.3.5",
-    "prettier": "^2.3.2",
-    "autoprefixer": "^9.8.6"
+    "prettier": "^2.3.2"
   }
 }

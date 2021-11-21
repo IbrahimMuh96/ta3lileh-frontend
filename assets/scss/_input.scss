@@ -1,9 +1,14 @@
 
+   input, select, textarea {
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+ }
+  
   .backdrop {
     @apply w-full h-full fixed left-0 top-0 z-40;
     background-color: rgba(0, 0, 0, 0.7);
   }
-
   .auth-form {
     @apply w-full relative h-full z-50 m-auto py-14 px-6 max-w-full;
       @media only screen and (min-width: 419px) {
